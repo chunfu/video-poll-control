@@ -54,11 +54,9 @@ function App() {
         <div className="w-full flex flex-col mb-16 items-center text-center">
           <iframe
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
-            width="100%"
-            height="600px"
             src="https://www.surveycake.com/s/323yN"
             allowTransparency={true}
-            className="w-full h-[600px] border border-[#ddd]"
+            className="w-full h-[130vh] border border-[#ddd]"
           >
             載入中…
           </iframe>
