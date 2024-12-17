@@ -30,7 +30,10 @@ function App() {
         />
         <div className="flex flex-wrap space-x-2 space-y-3 w-full justify-center items-end mb-5">
           {videos.map((video, index) => (
-            <div key={video.id} className="flex flex-col items-center basis-[calc(50%-10px)]">
+            <div
+              key={video.id}
+              className="flex flex-col items-center basis-[calc(50%-10px)]"
+            >
               <video
                 className="w-auto max-h-[200px] h-auto mb-1 object-contain object-center rounded"
                 src={video.src}
@@ -49,20 +52,16 @@ function App() {
           ))}
         </div>
         <div className="w-full flex flex-col mb-16 items-center text-center">
-          <p className="mb-8 leading-relaxed">
-            說明文字說明文說明文字說明文說明文字說明文說明文字說明文字字字字說明文字說明文字
-            說明文字說明文說明文字說明文說明文字說明文說明文字說明文字字字字說明文字說明文字
-            說明文字說明文說明文字說明文說明文字說明文說明文字說明文字字字字說明文字說明文字
-          </p>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfjhdopk0wlLUylBzDrHlVEnwTmOTt3vgS103MN83SOBbnc8g/viewform?embedded=true"
-              className="w-full h-[600px]"
-            >
-              載入中…
-            </iframe>
-          <p className="text-sm mt-2 text-gray-500 mb-8 w-full">
-            Neutra shabby chic ramps, viral fixie.
-          </p>
+          <iframe
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+            width="100%"
+            height="600px"
+            src="https://www.surveycake.com/s/323yN"
+            allowTransparency={true}
+            className="w-full h-[600px] border border-[#ddd]"
+          >
+            載入中…
+          </iframe>
         </div>
       </div>
     </section>
