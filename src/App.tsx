@@ -26,6 +26,7 @@ function App() {
           src={focusedVideoSrc}
           controls
           autoPlay
+          playsInline
         />
         <div className="flex flex-wrap space-x-2 space-y-3 w-full justify-center items-end mb-5">
           {videos.map((video, index) => (
@@ -36,6 +37,7 @@ function App() {
                 controls
                 autoPlay
                 muted
+                playsInline
               />
               <button
                 onClick={() => handleVideoClick(index)}
