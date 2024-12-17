@@ -56,7 +56,7 @@ function App() {
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
             src="https://www.surveycake.com/s/323yN"
             allowTransparency={true}
-            className="w-full h-[130vh] border border-[#ddd]"
+            className="w-full sm:h-[130vh] max-sm:h-[170vh] border border-[#ddd]"
           >
             載入中…
           </iframe>
