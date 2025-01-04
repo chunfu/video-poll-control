@@ -18,9 +18,8 @@ const videos = [
 ];
 
 const content = `
-請先觀賞下方的一分鐘影片。 
+請先觀賞下方的一分鐘影片。
 
-您可以如同導播般，自行點選不同畫面，當您選取後，它將會呈現在最上方的大畫面中，
 `;
 
 interface PageProps {
@@ -28,12 +27,6 @@ interface PageProps {
 }
 
 const Page2: React.FC<PageProps> = ({ onClick }) => {
-  const [focusedVideoSrc, setFocusedVideoSrc] = useState<string>("");
-
-  const handleVideoClick = (index: number) => {
-    setFocusedVideoSrc(videos[index].src);
-  };
-
   const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(true);
 
   useEffect(() => {
@@ -52,23 +45,10 @@ const Page2: React.FC<PageProps> = ({ onClick }) => {
       </div>
       <img
         className="w-full h-1/3 my-5 object-contain object-center rounded"
-        src={focusedVideoSrc}
+        src={cam5}
         autoPlay
         playsInline
       />
-      <div className="flex flex-wrap w-full justify-center items-end">
-        {videos.map((video, index) => (
-          <img
-            key={video.id}
-            className="w-1/2 mb-1 object-contain object-center rounded"
-            src={video.src}
-            autoPlay
-            muted
-            playsInline
-            onClick={() => handleVideoClick(index)}
-          />
-        ))}
-      </div>
       <Button onClick={onClick} disabled={isButtonDisabled}>
         繼續填答
       </Button>
