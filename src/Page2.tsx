@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+/*
 import video1 from "./assets/1.mp4";
 import video2 from "./assets/2.mp4";
 import cam1 from "./assets/cam1.png";
 import cam2 from "./assets/cam2.png";
 import cam3 from "./assets/cam3.png";
 import cam4 from "./assets/cam4.png";
+*/
 import cam5 from "./assets/cam5.png";
 import Button from "./Button";
 
+/*
 const videos = [
   { id: 1, description: "視角 1", src: cam1 },
   { id: 2, description: "視角 2", src: cam2 },
@@ -16,6 +19,7 @@ const videos = [
   { id: 4, description: "視角 4", src: cam4 },
   { id: 5, description: "視角 5", src: cam5 },
 ];
+*/
 
 const content = `
 請先觀賞下方的一分鐘影片。
