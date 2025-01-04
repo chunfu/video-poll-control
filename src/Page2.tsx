@@ -46,8 +46,8 @@ const Page2: React.FC<PageProps> = ({ onClick }) => {
       <img
         className="w-full h-1/3 my-5 object-contain object-center rounded"
         src={cam5}
-        autoPlay
-        playsInline
+        // autoPlay
+        // playsInline
       />
       <Button onClick={onClick} disabled={isButtonDisabled}>
         繼續填答
